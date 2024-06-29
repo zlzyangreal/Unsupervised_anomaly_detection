@@ -6,9 +6,9 @@
 我们团队使用三种方式进行PCB异常检测，分别是1.机器视觉2.EfficientAD3.ADMM-RegAD（自研算法），除此之外我们还具备精美的UI人机交互界面。我们选择广和通公司的国产AGC6490开发板作为我们项目的核心技术平台，完成了这个项目。
 # 产品效果展示
 ## 1.机器视觉
-![alt text](MResult.png)
-## 2.EfficientAD
-![alt text](EffentADResult.png)
-## 3.ADMM-RegAD
-![alt text](ADMMResult.png)
-## 4.UI
+![alt text](<Result image display/MResult.png>)
+## 2. EfficientAD
+![alt text](<Result image display/EffentADResult.png>)
+## 3. ADMM-RegAD
+![alt text](<Result image display/ADMMResult.png>)
+## 4. UI
