@@ -4,9 +4,9 @@ Our team plans to adopt a data-driven approach, take PCB boards as the research 
 Our team uses three ways to perform PCB anomaly detection, which are  1. Machine vision 2. EfficientAD 3. ADMM-RegAD (self-developed algorithm).   In addition, we also have a beautiful UI human-computer interaction interface.We chose the domestic AGC6490 development board of Chinese company Fibocom Wireless Inc. as the core technology platform of our project and completed this project.
 # Product effect display
 ## 1. Machine vision
-![alt text](MResult.png)
+![alt text](<Result image display/MResult.png>)
 ## 2. EfficientAD
-![alt text](EffentADResult.png)
+![alt text](<Result image display/EffentADResult.png>)
 ## 3. ADMM-RegAD
-![alt text](ADMMResult.png)
+![alt text](<Result image display/ADMMResult.png>)
 ## 4. UI
