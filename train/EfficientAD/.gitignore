@@ -1,0 +1,6 @@
+*.pth
+data/
+*.pyc
+log.txt
+*.npy
+*.code-workspace
