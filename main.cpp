@@ -10,15 +10,14 @@
 
 int main_model = 0;
 
-// 定义工程路径
-const std::string basePath = "";//工程路径
+// Define the project path
+const std::string basePath = "";
 
-// 定义各个项目的基础路径，它们共享basePath
 const std::string efficientADPath = basePath + "Efficient/";
 const std::string admmRegADPath = basePath + "ADMM-RegAD/";
 const std::string machineVisionDataPath = basePath + "Data/";
 const std::string resultPath = basePath + "Result/";
-// 使用基础路径构建具体的路径
+
 const std::string Efficient_AD_folderA = efficientADPath + "Start/";
 const std::string Efficient_AD_folderB = efficientADPath + "Result/";
 
@@ -44,7 +43,6 @@ int main(void) {
     int ret;
     TheModelFunction();
 #if DEBUG1
-// 保存图片
     if(main_model==1||main_model==2) {
         cv::VideoCapture cap("/dev/video0");
         ret = VideCapture_Init(cap);
@@ -68,8 +66,6 @@ int main(void) {
     }
 #endif
 #if DEBUG2
-
-// 迁移图片
     if(main_model==1) {
         const std::string srcPath = basePath + "image/image_15.png";
         const std::string destPath = basePath + "Data/test/000.png";
@@ -99,7 +95,6 @@ int main(void) {
 #endif
 
 #if DEBUG3
-// 调用推理
     if(main_model==0) {
         ret = Efficient_AD_Inference();
         if(ret==0) {

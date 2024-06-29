@@ -171,7 +171,7 @@ std::string findCorrespondingMaskImage(const std::string& maxInliersImageName, c
         closedir(dir);
     }
 
-    return "";  // 返回空字符串表示未找到匹配的图片
+    return "";  
 }
 
 void resizeAndConcatenateImages(const std::string& imagePath1, const std::string& imagePath2, const std::string& imagePath3, const std::string& outputFolderPath) {

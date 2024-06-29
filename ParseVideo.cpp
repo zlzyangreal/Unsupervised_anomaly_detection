@@ -3,9 +3,8 @@
 #include <dirent.h>
 #include <vector>
 
-//摄像头初始化
+//Camera initialization
 int VideCapture_Init(cv::VideoCapture& cap) {
-    // 检查摄像头是否成功打开
     if (!cap.isOpened()) {
         std::cerr << "【Error】Could not open camera /dev/video0" << std::endl;
         cap.open("/dev/video1");
@@ -17,33 +16,24 @@ int VideCapture_Init(cv::VideoCapture& cap) {
     return 0;
 }
 
-//保存图像
 int VideoCapture_Save(cv::VideoCapture& cap) {
     cv::Mat frame;
     cv::Mat resizedFrame;
-    // int width = 512;
-    // int height = 512;
     int width = 1562;
     int height = 1024;
     
     for (int i = 0; i < 20; ++i) {
-        // 从摄像头读取一帧
         cap >> frame;
-        // 检查帧是否为空
         if (frame.empty()) {
             std::cerr << "【Error】Could not capture frame" << std::endl;
             return -1;
         }
-        // 调整图片大小
         cv::resize(frame, resizedFrame, cv::Size(width, height));
-        // 生成文件路径
         std::string filePath = "image/image_" + std::to_string(i + 1) + ".png";
-        // 保存帧到指定目录
         cv::imwrite(filePath, resizedFrame);
 #if DEBUG6
         std::cout << "【Hint】Image saved to " << filePath << std::endl;
 #endif
-        // 等待100毫秒
         cv::waitKey(100);
     }
     return 0;
@@ -63,13 +53,12 @@ int Save_and_show(std::string folderA, std::string folderB, std::string folderC)
         return 1;
     }
 
-    // 调整imageB的宽度与imageA一致，高度按比例缩放
     int newBHeight = static_cast<int>(imageB.rows * (static_cast<double>(imageA.cols) / imageB.cols));
     cv::Mat resizedB;
     cv::resize(imageB, resizedB, cv::Size(imageA.cols, newBHeight));
 
-    int width = imageA.cols; // 使用imageA的宽度
-    int height = imageA.rows + resizedB.rows; // 拼接后的总高度
+    int width = imageA.cols; 
+    int height = imageA.rows + resizedB.rows; 
 
     cv::Mat result(height, width, imageA.type());
 
