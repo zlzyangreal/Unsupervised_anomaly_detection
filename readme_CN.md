@@ -12,7 +12,7 @@
 ## 3. ADMM-RegAD
 ![alt text](<Result image display/ADMMResult.png>)
 ## 4. UI
-
+![alt text](<Result image display/qt1.png>)
 
 # 文件目录简介
 - 1.Embedded_side_important_code:项目的核心代码

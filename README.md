@@ -10,6 +10,7 @@ Our team uses three ways to perform PCB anomaly detection, which are  1. Machine
 ## 3. ADMM-RegAD
 ![alt text](<Result image display/ADMMResult.png>)
 ## 4. UI
+![alt text](<Result image display/qt1.png>)
 
 # File Directory Introduction
 - 1.Embedded_side_important_code:The main code of the embedded end, the core code of the whole project
