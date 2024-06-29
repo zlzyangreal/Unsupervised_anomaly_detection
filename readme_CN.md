@@ -18,3 +18,4 @@
 - 1.Embedded_side_important_code:项目的核心代码
 - 2.Result image display:结果展示图片
 - 3.train:项目的模型训练代码
+- 4.parper:工程参考论文
