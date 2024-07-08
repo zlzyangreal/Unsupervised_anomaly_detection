@@ -5,15 +5,25 @@
 
 我们团队使用三种方式进行PCB异常检测，分别是1.机器视觉2.EfficientAD3.ADMM-RegAD（自研算法），除此之外我们还具备精美的UI人机交互界面。我们选择广和通公司的国产SC171开发板作为我们项目的核心技术平台，完成了这个项目。
 # 产品效果展示
-## 1.机器视觉
+## 1.检测结果展示
+### 1.1机器视觉
 ![alt text](<Result image display/MResult.png>)
-## 2. EfficientAD
+### 1.2 EfficientAD
 ![alt text](<Result image display/EffentADResult.png>)
-## 3. ADMM-RegAD
+### 1.3 ADMM-RegAD
 ![alt text](<Result image display/ADMMResult.png>)
-## 4. UI
-![alt text](<Result image display/qt1.png>)
 
+更多的关于ADMM-RegAD结果演示请查看[Result image display](<Result image display/ADMM_Multiple_results_presentation>)文件夹
+## 2. UI设计展示
+### 2.1 实时采集界面
+![alt text](<Result image display/qt1.png>)
+### 2.2 缺陷检测结果定位界面
+![alt text](<Result image display/qt3.png>)
+### 2.3 公开数据集选择界面
+![alt text](<Result image display/qt4.png>)
+![alt text](<Result image display/qt5.png>)
+### 2.4 帮助手册界面
+![alt text](<Result image display/qt2.png>)
 # 文件目录简介
 - 1.Embedded_side_important_code:项目的核心代码
 - 2.Result image display:结果展示图片
